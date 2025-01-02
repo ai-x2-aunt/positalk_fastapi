@@ -5,15 +5,9 @@ class OpenAIHandler:
     def __init__(self):
         self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
         self.base_prompt = """
-        #task
         당신은 문장 변환 전문가입니다.
         주어진 문장을 지정된 스타일로 변환해주세요.
-
-        #스타일 종류
-        - formal: 공식적이고 격식있는 표현
-        - casual: 친근하고 일상적인 표현
-        - polite: 매우 공손하고 예의바른 표현
-        - cute: 귀엽고 애교있는 표현
+        변환된 문장만 출력하세요. 다른 설명은 하지 마세요.
         """
 
     def get_completion(self, message, style):
