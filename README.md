@@ -1,7 +1,7 @@
 ## 필수 라이브러리 설치
 다음 명령어를 실행하여 필요한 종속성을 설치합니다:
 ```bash
-pip install fastapi transformers torch
+pip install fastapi transformers torch uvicorn
 ```
 
 ## 서버 실행
