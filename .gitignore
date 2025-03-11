@@ -1,6 +1,7 @@
 # Environment variables
 .env
 .history/
+positalk_fastapi.git/
 
 # Python
 __pycache__/
